@@ -26,6 +26,15 @@ nlu:
     - what is your next event?
     - do you have any events coming up?
 
+- intent: choose_meetup_group
+  examples: |
+    - chennai meetup group?
+    - bengaluru group
+    - anything happening on both meetup chapters?
+    - both pls
+    - wassup in chennai chapter?
+    - bangalore chapter events
+
 - intent: goodbye
   examples: |
     - cu

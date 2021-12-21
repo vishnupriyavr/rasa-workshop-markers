@@ -14,6 +14,13 @@ responses:
 
   utter_know_details_about_meetup:
   - text: "It is awesome that you are interested in our meetup! Which of these groups are you interested in?"
+    buttons:
+    - title: "Rasa Community Chennai Chapter"
+      payload: "/choose_meetup_group"
+    - title: "Rasa Community Bangalore Chapter"
+      payload: "/choose_meetup_group"
+    - title: "Both of the above"
+      payload: "/choose_meetup_group"
 
   utter_did_that_help:
   - text: "Did that help you?"
