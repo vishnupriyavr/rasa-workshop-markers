@@ -12,10 +12,10 @@ intents:
 
 responses:
   utter_greet:
-  - text: "Hi! Good to see you here at "Let's MeetUp!" What are you looking for today?"
+  - text: "Hi! Good to see you here at 'Let's MeetUp!'! What are you looking for today?"
 
   utter_know_details_about_meetup:
-  - text: "Hi! Good to see you here at "Let's MeetUp!" What are you looking for today?"
+  - text: "It is awesome that you are interested in our meetup! Which of these groups are you interested in?"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
