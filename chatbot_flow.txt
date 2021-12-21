@@ -1,0 +1,33 @@
+Bot: Hi! Good to see you here at "Let's MeetUp!" What are you looking for today?
+
+User: I would like to know details about the upcoming meet up
+
+Bot: It is awesome that you are interested in our meetup! Which of these groups are you interested in?
+
+Button 1: Rasa Community Chennai Chapter
+Button 2: Rasa Community Bangalore Chapter
+Button 3: Both the above
+
+User: Both the above -> Marker 1 -> Which chapter is the user interested in?
+
+Bot: Sure, I have found one upcoming meetup to be scheduled today, at 7 pm! Would you like me to RSVP on your behalf?
+
+Button 1: Yes
+Button 2: No
+
+User: Yes, please  /  No, I am not interested in this -> Marker 2 -> Is the user interested in RSVPing?
+
+If User says yes:
+Bot: Can you provide me your name?
+
+User: Sure, its Priya
+
+Bot: Awesome Priya, I have RSVPed on your behalf, see you at the stage!
+
+
+If User says no:
+Bot: No problem, hoping to see you soon for the next meetup!
+
+User: Ok, bye
+
+Bot: Bye, see you soon!
