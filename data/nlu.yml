@@ -17,6 +17,15 @@ nlu:
     - goodevening
     - good afternoon
 
+- intent: know_details_about_meetup
+  examples: |
+    - upcoming meetup details
+    - when is the next meet up?
+    - is there any meet up?
+    - are you conducting any event?
+    - what is your next event?
+    - do you have any events coming up?
+
 - intent: goodbye
   examples: |
     - cu

@@ -2,6 +2,7 @@ version: "3.0"
 
 intents:
   - greet
+  - know_details_about_meetup
   - goodbye
   - affirm
   - deny
@@ -11,7 +12,10 @@ intents:
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hi! Good to see you here at "Let's MeetUp!" What are you looking for today?"
+
+  utter_know_details_about_meetup:
+  - text: "Hi! Good to see you here at "Let's MeetUp!" What are you looking for today?"
 
   utter_cheer_up:
   - text: "Here is something to cheer you up:"
@@ -24,7 +28,7 @@ responses:
   - text: "Great, carry on!"
 
   utter_goodbye:
-  - text: "Bye"
+  - text: "Bye, see you soon!"
 
   utter_iamabot:
   - text: "I am a bot, powered by Rasa."
