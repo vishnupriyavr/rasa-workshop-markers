@@ -10,9 +10,6 @@ intents:
   - goodbye
   - bot_challenge
 
-entities:
-  - name
-
 responses:
   utter_greet:
     - text: "Hi! Good to see you here at 'Let's MeetUp!'! What are you looking for today?"
