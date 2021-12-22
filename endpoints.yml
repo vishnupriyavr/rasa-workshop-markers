@@ -37,8 +37,9 @@ tracker_store:
   dialect: 'postgresql' # the dialect used to interact with the db
   url: 'postgres'
   db: 'rasa' # path to your db
-  username: rasa_user
-  password: magical_password
+  username: 'rasa_user'
+  password: 'magical_password'
+  login_db: postgres
   query: # optional dictionary to be added as a query string to the connection URL
 
 # Event broker which all conversation events should be streamed to.

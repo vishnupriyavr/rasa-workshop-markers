@@ -7,13 +7,19 @@ services:
     volumes:
      - ./:/app
     container_name: rasa-bot
-    command: run -m models --endpoints endpoints.yml
+    command: >
+      run
+      --cors "*"
+      --debug 
+      --enable-api 
+      -p 5015
 
   postgres:
     image: postgres:latest
-    environment:
-      POSTGRES_PASSWORD: magical_password
-      POSTGRES_USER: rasa_user
+    env_file:
+      - database.env # configure postgres
 
     volumes:
       - ./database_data:/var/lib/postgresql/data/
+      # copy the sql script to create tables
+      - ./sql:/docker-entrypoint-initdb.d
