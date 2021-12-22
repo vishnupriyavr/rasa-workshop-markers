@@ -27,7 +27,7 @@ responses:
     - text: 'Can you provide me your name?'
 
   utter_provide_name:
-    - text: 'Awesome {name}, I have RSVPed on your behalf, see you at the stage!'
+    - text: 'Awesome, I have RSVPed on your behalf, see you at the stage!'
 
   utter_deny:
     - text: 'No problem, hoping to see you soon for the next meetup!'
