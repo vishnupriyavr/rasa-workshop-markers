@@ -29,6 +29,8 @@ nlu:
 
   - intent: choose_meetup_group
     examples: |
+      - chennai chapter
+      - chapter of bengaluru
       - Both of the above
       - Rasa Community Bangalore Chapter
       - Rasa Community Chennai Chapter

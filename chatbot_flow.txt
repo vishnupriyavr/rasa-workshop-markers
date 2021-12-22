@@ -38,3 +38,8 @@ Bot: No problem, hoping to see you soon for the next meetup!
 User: Ok, bye
 
 Bot: Bye, see you soon!
+
+Markers Flow:
+1) User interested in bot and also interested in RSVP
+2) User interested in bot but not interested in RSVP
+3) User not interested in bot
