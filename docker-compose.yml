@@ -11,5 +11,9 @@ services:
 
   postgres:
     image: postgres:latest
+    environment:
+      POSTGRES_PASSWORD: magical_password
+      POSTGRES_USER: rasa_user
+
     volumes:
       - ./database_data:/var/lib/postgresql/data/
