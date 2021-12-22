@@ -1,75 +1,91 @@
-version: "3.0"
+version: '3.0'
 
 nlu:
-- intent: greet
-  examples: |
-    - hey
-    - hello
-    - hi
-    - hello there
-    - good morning
-    - good evening
-    - moin
-    - hey there
-    - let's go
-    - hey dude
-    - goodmorning
-    - goodevening
-    - good afternoon
+  - intent: greet
+    examples: |
+      - hey
+      - hello
+      - hi
+      - hello there
+      - good morning
+      - good evening
+      - moin
+      - hey there
+      - let's go
+      - hey dude
+      - goodmorning
+      - goodevening
+      - good afternoon
+      - wassup
 
-- intent: know_details_about_meetup
-  examples: |
-    - upcoming meetup details
-    - when is the next meet up?
-    - is there any meet up?
-    - are you conducting any event?
-    - what is your next event?
-    - do you have any events coming up?
+  - intent: know_details_about_meetup
+    examples: |
+      - upcoming meetup details
+      - when is the next meet up?
+      - is there any meet up?
+      - are you conducting any event?
+      - what is your next event?
+      - do you have any events coming up?
 
-- intent: choose_meetup_group
-  examples: |
-    - chennai meetup group?
-    - bengaluru group
-    - anything happening on both meetup chapters?
-    - both pls
-    - wassup in chennai chapter?
-    - bangalore chapter events
+  - intent: choose_meetup_group
+    examples: |
+      - Both of the above
+      - Rasa Community Bangalore Chapter
+      - Rasa Community Chennai Chapter
+      - chennai meetup group?
+      - bengaluru group
+      - anything happening on both meetup chapters?
+      - both pls
+      - in chennai chapter please?
+      - bangalore chapter events
 
-- intent: goodbye
-  examples: |
-    - cu
-    - good by
-    - cee you later
-    - good night
-    - bye
-    - goodbye
-    - have a nice day
-    - see you around
-    - bye bye
-    - see you later
+  - intent: goodbye
+    examples: |
+      - cu
+      - good by
+      - cee you later
+      - good night
+      - bye
+      - goodbye
+      - have a nice day
+      - see you around
+      - bye bye
+      - see you later
 
-- intent: affirm
-  examples: |
-    - yes
-    - y
-    - indeed
-    - of course
-    - that sounds good
-    - correct
+  - intent: affirm
+    examples: |
+      - yes
+      - y
+      - indeed
+      - of course
+      - that sounds good
+      - correct
+      - I want to RSVP
 
-- intent: deny
-  examples: |
-    - no
-    - n
-    - never
-    - I don't think so
-    - don't like that
-    - no way
-    - not really
+  - intent: provide_name
+    examples: |
+      - Sure, its [Priya](name)
+      - [Rashmi](name) is the name
+      - [Dishant](name) here
+      - My name is [Emily](name)
+      - RSVP as [Emma](name), please
+      - [Vishnu](name)
 
-- intent: bot_challenge
-  examples: |
-    - are you a bot?
-    - are you a human?
-    - am I talking to a bot?
-    - am I talking to a human?
+  - intent: deny
+    examples: |
+      - no
+      - n
+      - never
+      - I don't think so
+      - don't like that
+      - no way
+      - not really
+      - nah, not interested
+      - I dont want to
+
+  - intent: bot_challenge
+    examples: |
+      - are you a bot?
+      - are you a human?
+      - am I talking to a bot?
+      - am I talking to a human?

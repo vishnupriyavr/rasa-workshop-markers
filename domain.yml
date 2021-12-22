@@ -1,35 +1,49 @@
-version: "3.0"
+version: '3.0'
 
 intents:
   - greet
   - know_details_about_meetup
-  - goodbye
+  - choose_meetup_group
   - affirm
+  - provide_name
   - deny
+  - goodbye
   - bot_challenge
+
+entities:
+  - name
 
 responses:
   utter_greet:
-  - text: "Hi! Good to see you here at 'Let's MeetUp!'! What are you looking for today?"
+    - text: "Hi! Good to see you here at 'Let's MeetUp!'! What are you looking for today?"
 
   utter_know_details_about_meetup:
-  - text: "It is awesome that you are interested in our meetup! Which of these groups are you interested in?"
-    buttons:
-    - title: "Rasa Community Chennai Chapter"
-      payload: "/choose_meetup_group"
-    - title: "Rasa Community Bangalore Chapter"
-      payload: "/choose_meetup_group"
-    - title: "Both of the above"
-      payload: "/choose_meetup_group"
+    - text: 'It is awesome that you are interested in our meetup! Which of these groups are you interested in?'
+      buttons:
+        - title: 'Rasa Community Chennai Chapter'
+          payload: '/choose_meetup_group'
+        - title: 'Rasa Community Bangalore Chapter'
+          payload: '/choose_meetup_group'
+        - title: 'Both of the above'
+          payload: '/choose_meetup_group'
 
-  utter_did_that_help:
-  - text: "Did that help you?"
+  utter_choose_meetup_group:
+    - text: 'Sure, I have found one upcoming meetup to be scheduled today, at 7 pm! Would you like me to RSVP on your behalf?'
+
+  utter_affirm:
+    - text: 'Can you provide me your name?'
+
+  utter_provide_name:
+    - text: 'Awesome {name}, I have RSVPed on your behalf, see you at the stage!'
+
+  utter_deny:
+    - text: 'No problem, hoping to see you soon for the next meetup!'
 
   utter_goodbye:
-  - text: "Bye, see you soon!"
+    - text: 'Bye, see you soon!'
 
   utter_iamabot:
-  - text: "I am a bot, powered by Rasa."
+    - text: 'I am a bot, powered by Rasa.'
 
 session_config:
   session_expiration_time: 60

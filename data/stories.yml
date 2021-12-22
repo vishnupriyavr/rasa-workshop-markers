@@ -1,10 +1,30 @@
-version: "3.0"
+version: '3.0'
 
 stories:
+  - story: happy path - know_details_about_meetup + choose_meetup_group + agree_to_rsvp
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: know_details_about_meetup
+      - action: utter_know_details_about_meetup
+      - intent: choose_meetup_group
+      - action: utter_choose_meetup_group
+      - intent: affirm
+      - action: utter_affirm
+      - intent: provide_name
+      - action: utter_provide_name
+      - intent: goodbye
+      - action: utter_goodbye
 
-- story: happy path - know_details_about_meetup
-  steps:
-  - intent: greet
-  - action: utter_greet
-  - intent: know_details_about_meetup
-  - action: utter_know_details_about_meetup
+  - story: happy path - know_details_about_meetup + choose_meetup_group + deny_to_rsvp
+    steps:
+      - intent: greet
+      - action: utter_greet
+      - intent: know_details_about_meetup
+      - action: utter_know_details_about_meetup
+      - intent: choose_meetup_group
+      - action: utter_choose_meetup_group
+      - intent: deny
+      - action: utter_deny
+      - intent: goodbye
+      - action: utter_goodbye

@@ -8,21 +8,28 @@ Button 1: Rasa Community Chennai Chapter
 Button 2: Rasa Community Bangalore Chapter
 Button 3: Both the above
 
-User: Both the above -> Marker 1 -> Which chapter is the user interested in?
+-> Marker 1 -> Is the user interested in this bot?
+If User says not interested:
+Bot: Bye, see you soon!
+
+If User is interested to proceed further:
+User: Both the above
 
 Bot: Sure, I have found one upcoming meetup to be scheduled today, at 7 pm! Would you like me to RSVP on your behalf?
 
-Button 1: Yes
-Button 2: No
+User: Yes, please  /  No, I am not interested in this
 
-User: Yes, please  /  No, I am not interested in this -> Marker 2 -> Is the user interested in RSVPing?
-
+-> Marker 2 -> Is the user interested in RSVPing?
 If User says yes:
 Bot: Can you provide me your name?
 
 User: Sure, its Priya
 
 Bot: Awesome Priya, I have RSVPed on your behalf, see you at the stage!
+
+User: Ok, bye
+
+Bot: Bye, see you soon!
 
 
 If User says no:

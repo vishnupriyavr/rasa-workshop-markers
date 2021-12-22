@@ -1,0 +1,15 @@
+version: '3.4'
+services:
+  rasa:
+    image: rasa/rasa:3.0.3-full
+    ports:
+     - 5015:5005
+    volumes:
+     - ./:/app
+    container_name: rasa-bot
+    command: run -m models --endpoints endpoints.yml
+
+  postgres:
+    image: postgres:latest
+    volumes:
+      - ./database_data:/var/lib/postgresql/data/

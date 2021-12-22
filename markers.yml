@@ -1,0 +1,13 @@
+marker_user_interested_in_bot:
+  seq:
+    - intent: know_details_about_meetup
+    - action: utter_know_details_about_meetup
+    - intent: choose_meetup_group
+
+marker_rsvp_success:
+  seq:
+    - intent: know_details_about_meetup
+    - action: utter_know_details_about_meetup
+    - intent: choose_meetup_group
+    - action: utter_choose_meetup_group
+    - intent: affirm
