@@ -64,12 +64,12 @@ nlu:
 
   - intent: provide_name
     examples: |
-      - Sure, its [Priya](name)
-      - [Rashmi](name) is the name
-      - [Dishant](name) here
-      - My name is [Emily](name)
-      - RSVP as [Emma](name), please
-      - [Vishnu](name)
+      - Sure, its Priya
+      - Rashmi is the name
+      - Dishant here
+      - My name is Emily
+      - RSVP as Emma, please
+      - Vishnu
 
   - intent: deny
     examples: |
