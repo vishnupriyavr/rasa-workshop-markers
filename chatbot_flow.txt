@@ -4,9 +4,9 @@ User: I would like to know details about the upcoming meet up
 
 Bot: It is awesome that you are interested in our meetup! Which of these groups are you interested in?
 
-Button 1: Rasa Community Chennai Chapter
-Button 2: Rasa Community Bangalore Chapter
-Button 3: Both the above
+Option 1: Rasa Community Chennai Chapter
+Option 2: Rasa Community Bangalore Chapter
+Option 3: Both the above
 
 -> Marker 1 -> Is the user interested in this bot?
 If User says not interested:
@@ -25,7 +25,7 @@ Bot: Can you provide me your name?
 
 User: Sure, its Priya
 
-Bot: Awesome Priya, I have RSVPed on your behalf, see you at the stage!
+Bot: Awesome, I have RSVPed on your behalf, see you at the stage!
 
 User: Ok, bye
 
@@ -40,6 +40,5 @@ User: Ok, bye
 Bot: Bye, see you soon!
 
 Markers Flow:
-1) User interested in bot and also interested in RSVP
-2) User interested in bot but not interested in RSVP
-3) User not interested in bot
+1) User interested in bot 
+2) User interested in bot and also interested in RSVP 
